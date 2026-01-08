@@ -1,47 +1,171 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="pt"><head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="​​AGUARDANDO SEU PAGAMENTO...">
-    <meta name="description" content="">
-    <title>Obrigado</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Obrigado.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 5.0.7, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": ""
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Obrigado">
-    <meta property="og:type" content="website">
-  </head>
-  <body data-home-page="Obrigado.html" data-home-page-title="Obrigado" class="u-body u-custom-color-2 u-xl-mode" data-lang="pt"><header class="u-clearfix u-header" id="sec-9ea5"><div class="u-clearfix u-sheet u-sheet-1"></div></header>
-    <section class="u-clearfix u-custom-color-5 u-valign-middle-xs u-section-1" id="sec-886d">
-      <h1 class="u-align-center u-custom-font u-font-arial u-text u-text-1"> ¡FELICIDADES! TU COMPRA FUE APROBADA.</h1>
-    </section>
-    <section class="u-clearfix u-section-2" id="sec-5c89">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-align-center u-custom-font u-font-arial u-text u-text-custom-color-1 u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-1">Información sobre tu acceso.</h3>
-        <h6 class="u-align-left u-text u-text-default u-text-2"> Acabas de adquirir el curso <span style="font-weight: 700;">Adios Gluten</span><b>.&nbsp;</b>Agradecemos tu confianza y esperamos cumplir todas tus expectativas.
-        </h6>
-        <h3 class="u-align-center u-custom-font u-font-arial u-text u-text-custom-color-1 u-text-default u-text-3"> &nbsp;​¡Atención!</h3>
-        <h6 class="u-align-left u-text u-text-default u-text-4"> El correo con el enlace para acceder al área de miembros será enviado por Hotmart.<br>
-          <br>Si no lo encuentras en tu bandeja de entrada, busca el correo en la carpeta de spam o no deseados. Busca el correo de <span style="font-weight: 700;">noreply@hotmart.com</span>.<br>
-          <br>Si aun así no lo encuentras, contáctanos a través del correo electrónico. <span style="font-weight: 700;"> (ceroglutenpurasalud@gmail.com).</span></b>
-        </h6>
-      </div>
-    </section>
-    
-    
-    <footer class="u-align-center u-clearfix u-footer" id="sec-ddcf"><div class="u-clearfix u-sheet u-sheet-1"></div></footer>
-   
-  
-</body></html>
+    <title>¡Felicidades! - Sanar con Sabor</title>
+    <!-- Tailwind CSS para estilização rápida e bonita -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonte Google Poppins para um visual moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+        }
+        
+        /* Animação de pulso para o botão do WhatsApp */
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        .btn-whatsapp {
+            animation: pulse-green 2s infinite;
+        }
+
+        /* Animação da barra de progresso */
+        .progress-bar {
+            width: 0%;
+            transition: width 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center pb-10">
+
+    <!-- Topo Aviso -->
+    <div class="w-full bg-green-800 text-white text-center py-2 text-sm font-semibold uppercase tracking-wider">
+        <i class="fas fa-check-circle mr-2"></i> Pedido Confirmado con Éxito
+    </div>
+
+    <!-- Barra de Progresso -->
+    <div class="w-full h-2 bg-gray-300">
+        <div id="progress" class="progress-bar h-full bg-green-500"></div>
+    </div>
+
+    <!-- Container Principal -->
+    <div class="max-w-2xl w-full bg-white shadow-xl rounded-b-xl overflow-hidden mt-4 mx-4 border border-gray-200">
+        
+        <!-- Hero Section -->
+        <div class="p-8 text-center border-b border-gray-100">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6 text-green-600">
+                <i class="fas fa-check text-4xl"></i>
+            </div>
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2 leading-tight">
+                ¡FELICIDADES! YA ERES PARTE DE <span class="text-green-600">SANAR CON SABOR</span> 🎉
+            </h1>
+            <p class="text-gray-600 text-lg">
+                Tu inscripción ha sido confirmada y tu acceso ya está en camino.
+            </p>
+        </div>
+
+        <!-- Alerta Amarelo -->
+        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 m-6 rounded shadow-sm">
+            <div class="flex">
+                <div class="flex-shrink-0">
+                    <i class="fas fa-exclamation-triangle text-yellow-400"></i>
+                </div>
+                <div class="ml-3">
+                    <p class="text-sm text-yellow-800 font-bold">
+                        IMPORTANTE: NO CIERRES ESTA PÁGINA AÚN
+                    </p>
+                    <p class="text-sm text-yellow-700 mt-1">
+                        Sigue los 3 pasos abajo para asegurar tu acceso y recibir tus regalos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PASSO 1: WhatsApp (O MAIS IMPORTANTE) -->
+        <div class="px-6 pb-6">
+            <div class="bg-green-50 border border-green-200 rounded-xl p-6 text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                    PASO OBLIGATORIO
+                </div>
+                
+                <h2 class="text-xl font-bold text-gray-800 mb-2">
+                    <span class="bg-green-600 text-white rounded-full w-8 h-8 inline-flex items-center justify-center mr-2 text-sm">1</span>
+                    Únete a la Tribu VIP en WhatsApp
+                </h2>
+                <p class="text-gray-600 mb-6 text-sm md:text-base">
+                    Para garantizar que tengas apoyo y motivación, hemos liberado un cupo en nuestra comunidad exclusiva de alumnas.
+                </p>
+
+                <a href="https://chat.whatsapp.com/LfdtHeULcdB0MnkUuwvTOY" target="_blank" class="btn-whatsapp block w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-4 rounded-lg text-lg transition duration-300 shadow-lg flex items-center justify-center gap-3">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    UNIRME AL GRUPO VIP AHORA
+                </a>
+                <p class="text-xs text-gray-500 mt-3">
+                    <i class="fas fa-lock"></i> Grupo exclusivo y silencioso (solo admins envían mensajes importantes)
+                </p>
+            </div>
+        </div>
+
+        <!-- PASSO 2: Download -->
+        <div class="px-6 pb-6">
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+                <h2 class="text-xl font-bold text-gray-800 mb-2">
+                    <span class="bg-blue-600 text-white rounded-full w-8 h-8 inline-flex items-center justify-center mr-2 text-sm">2</span>
+                    Descarga tu Regalo de Bienvenida
+                </h2>
+                <p class="text-gray-600 mb-4 text-sm">
+                    No esperes más. Descarga ahora tu material exclusivo con la primera receta y lista de compras.
+                </p>
+                
+                <a href="https://noticias-en-alta.online/entregavel/" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 shadow-md flex items-center justify-center gap-2">
+                    <i class="fas fa-download"></i>
+                    DESCARGAR MI MATERIAL AHORA
+                </a>
+            </div>
+        </div>
+
+        <!-- PASSO 3: Hotmart -->
+        <div class="px-6 pb-8">
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h2 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+                    <span class="bg-gray-600 text-white rounded-full w-8 h-8 inline-flex items-center justify-center mr-2 text-sm">3</span>
+                    ¿Cómo acceder al curso completo?
+                </h2>
+                <div class="space-y-3 text-sm text-gray-600">
+                    <p class="flex items-start">
+                        <i class="fas fa-envelope mt-1 mr-2 text-gray-400"></i>
+                        <span>Los datos de acceso fueron enviados por <strong>Hotmart</strong> a tu correo electrónico.</span>
+                    </p>
+                    <p class="flex items-start">
+                        <i class="fas fa-search mt-1 mr-2 text-gray-400"></i>
+                        <span>Busca el correo de: <strong>noreply@hotmart.com</strong></span>
+                    </p>
+                    <p class="flex items-start">
+                        <i class="fas fa-exclamation-circle mt-1 mr-2 text-gray-400"></i>
+                        <span>Si no lo encuentras, revisa tu carpeta de <strong>SPAM</strong> o Promociones.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-gray-50 p-6 text-center border-t border-gray-200">
+            <p class="text-gray-500 text-sm font-semibold">¿Necesitas ayuda?</p>
+            <p class="text-gray-500 text-sm mb-4">Escríbenos a: ceroglutenpurasalud@gmail.com</p>
+            <p class="text-xs text-gray-400">
+                &copy; 2024 Sanar con Sabor. Todos los derechos reservados.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Script para animar a barra de progresso -->
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('progress').style.width = '100%';
+            }, 300);
+        };
+    </script>
+
+</body>
+</html>
